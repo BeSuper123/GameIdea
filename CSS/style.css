@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+    padding: 2%;
+}
+
+.test {
+    background-color:blueviolet;
+    color: black;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    border: 2.5px solid black;
+    margin-top: 50px;
+}
+
+.test:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+.test:active {
+    background-color: brown;
+}
+
+#dino {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 20px;
+    background-color: #a4ffa4;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.eyes {
+    background-color: black;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+.mouth {
+    background-color: black;
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: 8px;
+}

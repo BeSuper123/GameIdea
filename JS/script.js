@@ -19,16 +19,18 @@ function moveBox () {
     document.addEventListener('keydown', (event) => {
         switch (event.key) {
             case 'ArrowUp':
-                y -= 2; // Move up
+                y -= 4; // Move up
                 break;
             case 'ArrowDown':
-                y += 2; // Move down
+                y += 4; // Move down
                 break;
             case 'ArrowLeft':
-                x -= 2; // Move left
+                x -= 4; // Move left
+                dino.style.transform = 'scaleX(-1)'; /* Flips the div horizontally */
                 break;
             case 'ArrowRight':
-                x += 2; // Move right
+                x += 4; // Move right
+                dino.style.transform = 'scaleX(1)'; /* Flips the div horizontally */
                 break;
             default:
                 return; // Ignore other keys
